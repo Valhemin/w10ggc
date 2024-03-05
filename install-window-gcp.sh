@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# wget -qO- https://office365bynxh-my.sharepoint.com/:u:/g/personal/foreveralone2258_office365bynxh_onmicrosoft_com/EdSdGTsHkvNMmLRA_e3gULcBVW6p9T8E2V_k5GiUwi6vXA?e=nxEvV6 | sudo bash
+# wget -qO- https://raw.githubusercontent.com/Valhemin/w10ggc/main/install-window-gcp.sh | sudo bash
 
 IMAGE_URL="https://huggingface.co/valhemin/w10ggc/blob/main/w10ggc2.img.gz"
 
