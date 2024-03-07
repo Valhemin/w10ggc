@@ -9,7 +9,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-apt update && apt install -y util-linux curl wget nano sudo fdisk wget pigz
+apt update && apt install -y util-linux curl wget nano sudo fdisk wget pigz -y
 
 echo ""
 echo ""
