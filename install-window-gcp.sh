@@ -2,7 +2,7 @@
 
 # wget -qO- https://raw.githubusercontent.com/Valhemin/w10ggc/main/install-window-gcp.sh | sudo bash
 
-IMAGE_URL="https://huggingface.co/valhemin/w10ggc/resolve/main/w10v12.raw.gz"
+IMAGE_URL="https://huggingface.co/valhemin/w10ggc/resolve/main/w10v9.raw.gz"
 
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
