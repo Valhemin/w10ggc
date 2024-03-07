@@ -2,22 +2,6 @@
 
 # wget -qO- https://raw.githubusercontent.com/Valhemin/w10ggc/main/install-window-gcp.sh | sudo bash
 
-IMAGE_URL="https://huggingface.co/valhemin/w10ggc/resolve/main/w10v9.raw.gz"
-
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
-fi
-
-apt update && apt install -y util-linux curl wget nano sudo fdisk wget pigz -y
-
-echo ""
-echo ""
-echo "    DOWNLOADING WINDOWS IMAGE FILE..."
-echo ""
-echo ""
-
-wget -O win.img.gz $IMAGE_URL
 
 # get all block devices, sort by SIZE to get the biggest device
 DESTINATION_DEVICE="$(lsblk -x SIZE -o NAME,SIZE | tail -n1 | cut -d ' ' -f 1)"
